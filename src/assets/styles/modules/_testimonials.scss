@@ -1,0 +1,41 @@
+.testimonial {
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-top: 110px;
+    
+    @include atMedium() {
+        height: 32.375rem;
+        margin: 110px 0 100px 0;
+    }
+
+    &__image {
+        display: block;
+        margin: 0 auto -80px auto;
+        width: 160px;
+        height: 160px;
+        border-radius: 80px;
+        border: solid 6px rgba(255, 255, 255, 0.8);
+        position: relative;
+        top: -80px;
+    }
+
+    &__name {
+        text-align: center;
+        color: #2f5572;
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin-bottom: 0;
+    }
+
+    &__subtitle {
+        text-align: center;
+        color: #d59541;
+        font-size: 0.9375rem;
+        font-weight: 400;
+        margin-bottom: 1rem;
+    }
+
+    &__description {
+        padding: 0 1.8125rem 1rem 1.8125rem;
+        font-weight: 400;
+    }
+}

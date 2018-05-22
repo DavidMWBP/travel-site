@@ -1,38 +1,38 @@
 .headline {
-    font-weight: 300;
-    font-size: 1.9rem;
+  font-weight: 300;
+  font-size: 1.9rem;
+
+  @include atSmall() {
+    font-size: 2.875rem;
+  }
+
+  &--small {
+    font-size: 1.2rem;
 
     @include atSmall() {
-        font-size: 2.875rem;
+      font-size: 1.875rem;
     }
+  }
 
-    &--small {
-        font-size: 1.2rem;        
+  &--spacing {
+    margin-bottom: 1em;
+  }
 
-        @include atSmall() {
-        font-size: 1.875rem;
-        }
-    }
+  &--light {
+    font-weight: 100;
+  }
 
-    &--spacing {
-        margin-bottom: 1em;
-    }
+  &--narrow {
+    max-width: 500px;
+  }
 
-    &--light {
-        font-weight: 100;
-    }
-
-    &--narrow {
-        max-width: 500px;
-    }
-
-    &--orange {
-        color: $mainOrange;
-    }
-
-    &--centered {
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-    }
+  &--orange {
+    color: $mainOrange;
+  }
+  
+  &--centered {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

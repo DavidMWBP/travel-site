@@ -1,13 +1,21 @@
 .page-section {
-    margin: 2rem 0;
-    padding: 1rem 0;
+  padding: 2rem 0;
 
+  @include atMedium() {
+    // padding: 4rem 0;
+  }
+
+  &--blue {
+    background-color: $mainBlue;
+    color: #FFF;
+  }
+  
+  &--testimonials {
+    background-color: #e0e6ef;
+    
     @include atMedium() {
-        // padding: 4rem 0;
-    }
-
-    &--blue {
-        background-color: $mainBlue;
-        color: #FFF;
-    }
+      background: url('/assets/images/testimonials-bg.jpg') top center no-repeat;
+      background-size: cover;
+      }
+  }
 }
