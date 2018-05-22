@@ -1,0 +1,26 @@
+.section-title {
+    margin-top: 1rem;
+    font-size: 2.75rem;
+    font-weight: 300;
+
+    @include atSmall() {
+        font-size: 3.75rem;
+    }
+
+
+    &__icon {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1rem;
+
+        @include atMedium() {
+            margin-right: .5rem;
+            display: inline;
+        }
+    }
+
+    &--centered {
+        text-align: center;
+    }
+}
